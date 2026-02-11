@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shift Roster - Team Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="16" fill="#4A90E2"/>
+                    <path d="M12 10L20 16L12 22V10Z" fill="white"/>
+                </svg>
+                <span>ShiftRoster</span>
+            </div>
+            <a href="admin.html" class="admin-link">Upload New Roster</a>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <div class="badge">Current Month Schedule</div>
+            <h1>Team Shift Roster</h1>
+            <p>View the latest shift schedule for your team</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="roster-card">
+            <div class="card-header">
+                <h2>Current Schedule</h2>
+                <div class="last-updated">
+                    Last updated: <span id="lastUpdated">Loading...</span>
+                </div>
+            </div>
+            <div class="roster-image-container">
+                <img id="rosterImage" src="roster.png" alt="Shift Roster" class="roster-image" onerror="showNoRoster()">
+                <div id="noRoster" class="no-roster" style="display: none;">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <rect x="3" y="3" width="18" height="18" rx="2" stroke-width="2"/>
+                        <line x1="3" y1="9" x2="21" y2="9" stroke-width="2"/>
+                        <line x1="9" y1="21" x2="9" y2="9" stroke-width="2"/>
+                    </svg>
+                    <h3>No roster uploaded yet</h3>
+                    <p>Please upload a roster image using the admin panel</p>
+                    <a href="admin.html" class="btn-primary">Upload Roster</a>
+                </div>
+            </div>
+            <div class="roster-actions">
+                <button onclick="downloadRoster()" class="btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Download
+                </button>
+                <button onclick="refreshRoster()" class="btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Refresh
+                </button>
+            </div>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white">
+                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3>Easy Access</h3>
+                <p>View your schedule anytime, anywhere from your mobile device</p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white">
+                        <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                        <path d="M12 6v6l4 2" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Real-time Updates</h3>
+                <p>Get the latest roster updates as soon as they're published</p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3>Team Collaboration</h3>
+                <p>Share the schedule with your entire team instantly</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 ShiftRoster. Powered by GitHub Pages</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

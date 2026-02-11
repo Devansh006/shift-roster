@@ -1,0 +1,129 @@
+================================================================================
+  🎯 SHIFT ROSTER - QUICK START GUIDE
+================================================================================
+
+BEFORE YOU BEGIN - IMPORTANT!
+------------------------------
+You need to add your roster image to this folder:
+
+1. Copy your shift roster image (the Excel screenshot or any roster image)
+2. Rename it to: roster.png (lowercase, exactly this name)
+3. Paste it in this folder: C:\AI Project\SHIFT ROASTER GITHUB
+
+NOTE: Without roster.png, the site will show "No roster uploaded" message.
+
+================================================================================
+
+📁 FILES IN THIS PROJECT:
+-------------------------
+✅ index.html              - Main page (displays the roster)
+✅ admin.html              - Admin page (upload new rosters)
+✅ styles.css              - All styling (modern dark theme)
+✅ script.js               - Main page functionality
+✅ admin.js                - Admin page functionality
+❌ roster.png              - YOUR ROSTER IMAGE (YOU NEED TO ADD THIS!)
+✅ README.md               - Detailed documentation
+✅ SETUP_INSTRUCTIONS.md   - Step-by-step GitHub Pages setup
+✅ .gitignore              - Git ignore file
+
+================================================================================
+
+🚀 DEPLOYMENT STEPS (Summary):
+-------------------------------
+
+Step 1: Add Your Roster Image ⭐ DO THIS FIRST!
+   → Copy your roster image to this folder
+   → Rename it to: roster.png
+
+Step 2: Create GitHub Account (if you don't have one)
+   → Go to: https://github.com/join
+
+Step 3: Create New Repository
+   → Go to: https://github.com/new
+   → Name: shift-roster
+   → Visibility: Public
+   → Click "Create repository"
+
+Step 4: Upload All Files
+   → Click "uploading an existing file"
+   → Drag all files from this folder (including roster.png!)
+   → Commit changes
+
+Step 5: Enable GitHub Pages
+   → Go to Settings → Pages
+   → Source: main branch
+   → Click Save
+   → Wait 2-3 minutes
+
+Step 6: Access Your Site
+   → URL: https://YOUR-USERNAME.github.io/shift-roster/
+   → Share with your team!
+
+================================================================================
+
+📖 DETAILED INSTRUCTIONS:
+-------------------------
+Read these files for complete details:
+
+1. SETUP_INSTRUCTIONS.md - Full step-by-step guide with screenshots info
+2. README.md             - Complete documentation and troubleshooting
+
+================================================================================
+
+🔄 MONTHLY UPDATES:
+-------------------
+To update roster each month:
+
+1. Go to: your-site-url/admin.html
+2. Upload new roster image
+3. Download as roster.png
+4. Replace old roster.png on GitHub
+5. Commit changes
+6. Wait 1-2 minutes for update
+
+================================================================================
+
+❓ NEED HELP?
+-------------
+- Check README.md for troubleshooting
+- Check SETUP_INSTRUCTIONS.md for detailed steps
+- Common issues:
+  • Image not showing? Check file is named roster.png (lowercase)
+  • 404 error? Wait 5-10 minutes after enabling Pages
+  • Can't see updates? Clear browser cache (Ctrl+F5)
+
+================================================================================
+
+📱 MOBILE ACCESS:
+-----------------
+Once deployed:
+1. Open the site URL on your phone
+2. Bookmark it OR
+3. Add to Home Screen for app-like experience
+
+iOS: Share → Add to Home Screen
+Android: Menu (⋮) → Add to Home Screen
+
+================================================================================
+
+✨ FEATURES:
+------------
+✓ Modern dark theme UI
+✓ Mobile responsive design
+✓ Easy roster image display
+✓ Download roster option
+✓ Admin panel for uploads
+✓ Auto-refresh functionality
+✓ No backend needed!
+✓ 100% free hosting
+
+================================================================================
+
+🎉 YOU'RE ALL SET!
+------------------
+Follow SETUP_INSTRUCTIONS.md to deploy to GitHub Pages.
+
+Don't forget to add your roster.png image first!
+
+================================================================================
+

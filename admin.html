@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Upload Roster</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="16" fill="#4A90E2"/>
+                    <path d="M12 10L20 16L12 22V10Z" fill="white"/>
+                </svg>
+                <span>ShiftRoster</span>
+            </div>
+            <a href="index.html" class="admin-link">← Back to Roster</a>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 100px;">
+        <div class="admin-card">
+            <div class="card-header">
+                <h2>Upload New Roster</h2>
+                <p class="subtitle">Update your team's shift schedule</p>
+            </div>
+
+            <div class="upload-section">
+                <div class="upload-area" id="uploadArea">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h3>Drop your roster image here</h3>
+                    <p>or click to browse</p>
+                    <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                    <button onclick="document.getElementById('fileInput').click()" class="btn-primary">
+                        Select Image
+                    </button>
+                </div>
+
+                <div id="previewSection" class="preview-section" style="display: none;">
+                    <h3>Preview</h3>
+                    <div class="preview-container">
+                        <img id="previewImage" alt="Roster Preview">
+                    </div>
+                    <div class="preview-actions">
+                        <button onclick="clearPreview()" class="btn-secondary">Clear</button>
+                        <button onclick="downloadNewRoster()" class="btn-primary">Download Image</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instructions-card">
+                <h3>📋 How to Update the Roster</h3>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Upload Your Image</h4>
+                            <p>Click the "Select Image" button above and choose your roster image</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Download the Image</h4>
+                            <p>After preview, click "Download Image" to save it as <code>roster.png</code></p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Update on GitHub</h4>
+                            <p>Go to your GitHub repository, navigate to the project root, and replace the <code>roster.png</code> file with your new downloaded file</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Commit Changes</h4>
+                            <p>Commit the changes with a message like "Update roster for [Month]"</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h4>Wait for Deployment</h4>
+                            <p>GitHub Pages will automatically update in 1-2 minutes. Refresh the main page to see changes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quick-upload-note">
+                    <h4>⚡ Quick Upload via GitHub Web</h4>
+                    <ol>
+                        <li>Go to your repository on GitHub.com</li>
+                        <li>Click on the existing <code>roster.png</code> file</li>
+                        <li>Click the pencil icon (Edit) or trash icon (Delete)</li>
+                        <li>Upload your new <code>roster.png</code> file by dragging it or clicking "choose your files"</li>
+                        <li>Commit the change</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 ShiftRoster. Powered by GitHub Pages</p>
+        </div>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+</html>
+
